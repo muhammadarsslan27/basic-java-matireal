@@ -155,13 +155,107 @@
 //    calgrad();
 // }
 
-for(let A=0; A<3;A++){
-   let user=prompt("Enter Your Name");
-   alert("Welcome Dear"+user)
+// for(let A=0; A<3;A++){
+//    let user=prompt("Enter Your Name");
+//    alert("Welcome Dear"+user)
+// }
+
+// N="y"
+// do(N=="y"){
+// {
+//    N=prompt("enter y to continue")
+// } while(N=="y");
+
+
+// let A=document.getElementById("H");
+// A.textContent="My name";
+// A.style.color="blue"; 
+
+              // founctions   
+
+function pice(){
+let b= document.getElementById("pic");
+b.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUyrLirEqrL7CjaamucbQGu5BVs2ovPKOLl2bIzfe5A&s=10"
+}   
+        let b=document.querySelector('.box');
+        // alert(b)
+
+function b1(c){
+b.style.background=c;
+    // c .style.backgroundColor="blue";
+    // c .style.backgroundColor="red";
+    // c .style.backgroundColor="yellow";
+    // c .style.backgroundColor="pink";
 }
 
-N="y"
-// do(N=="y"){
-{
-   N=prompt("enter y to continue")
-} while(N=="y");
+    let a=document.querySelector("#calculater");
+function n(){
+    a.value=document.getElementById("but").innerHTML 
+}
+
+
+//  Arry  
+         let arr=['Arslan','Ahmed','Ali'];
+       arr[3]='Nasir';
+       arr.push("khan");
+       arr.push("mujeeb");
+       arr.push("wasif");
+       arr.push("wasif");
+       arr.push("wasif");
+       arr.push("rashid");
+        arr.length;
+        arr.reverse();
+    //  alert(arr.length);
+
+    // simpe arry
+    //  for(let i=0;i<arr.length;i++){
+    //     console.log(arr[i])
+    //  }
+
+
+    //   revers arry 
+          for(let i=arr.length-1;i>=0;i--){
+        console.log(arr[i])}
+
+        
+    //    alert(arr[3]+""+ arr.length);
+        //  alert(arr[0]+" " +arr[2]);
+        //  arr[1]='honda'
+        //  alert(arr[0] +" "+arr[1]); 
+
+          //  object method
+
+
+          let car= [ 
+            {name:"Buggati sheroon",
+            colour:"BLACK",
+            speed:'480Km/ph'} ,
+
+            
+            {name:"BMW",
+            colour:"RED",
+            speed:'120Km/ph'} ,
+
+            
+            {name:"RR",
+            colour:"GREY",
+            speed:'130Km/ph'}
+         ]
+
+
+
+     //  for(let i=0;i<car.length;i++){
+    //    console.log(car[i].name + "\n"+ car[i].speed  + "\n"+ car[i].colour);
+    // }
+
+
+//  for each  loop
+ car.forEach( c=>{
+    console.log(c.name + "\n"+ c.speed  + "\n"+ c.colour  )
+ })   
+
+ let A= document.getElementById('cotaner')
+ let bhtml=`<li> heloow </li> <li> hay bhai </li> <p> my name is arslan  <br> my father name is Aslam</p>`
+ A.innerHTML=bhtml
+
+

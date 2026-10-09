@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light ON/OFF Toggle</title>
+  <style>
+    /* Styling for light states */
+    .bulb {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #555; /* Default OFF state (Dark grey) */
+      margin: 20px auto;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .bulb.on {
+      background-color: #ffeb3b; /* ON state (Bright yellow) */
+      box-shadow: 0 0 30px #ffeb3b; /* Glowing effect */
+    }
+
+    .container {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="lightBulb" class="bulb"></div>
+    <button id="toggleBtn" onclick="toggleLight()">Turn ON</button>
+  </div>
+
+  <script>
+    function toggleLight() {
+      const bulb = document.getElementById("lightBulb");
+      const button = document.getElementById("toggleBtn");
+
+      // Toggle the 'on' class on the bulb element
+      bulb.classList.toggle("on");
+
+      // Check if light is ON or OFF to update button text
+      if (bulb.classList.contains("on")) {
+        button.innerText = "Turn OFF";
+      } else {
+        button.innerText = "Turn ON";
+      }
+    }
+  </script>
+
+</body>
+</html>
